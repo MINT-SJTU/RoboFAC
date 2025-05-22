@@ -5,7 +5,7 @@ import torch
 def run_stage(env: str, stage: str, view: int):
     cmd = [
         "python",
-        "tasks/data_collect/run_correct.py",
+        "tasks/data_collect/run_success.py",
         "-e", env,
         "-n", "10",
         "--save-video",
