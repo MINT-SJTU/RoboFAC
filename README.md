@@ -5,8 +5,7 @@
 [![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)]()
 [![Model](https://img.shields.io/badge/Model-Huggingface-yellow)]()
 
-The page is still being developed！
-
+This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction".
 
 ## Introduction
 
