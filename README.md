@@ -1,8 +1,8 @@
 # RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction
 
-[![Project Page](https://img.shields.io/badge/Project-Page-blue)]() 
+[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://arxiv.org/abs/2505.12224) 
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)]()
-[![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)]()
+[![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
 [![Model](https://img.shields.io/badge/Model-Huggingface-yellow)]()
 
 This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction".
