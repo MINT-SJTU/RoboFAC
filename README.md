@@ -20,7 +20,7 @@ This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Frame
 * 📊 **Benchmark Suite**: Provides a rigorous benchmark to evaluate robotic failure correction models across multiple tasks and QA dimensions.
 * 🤖 **Real-world Deployment**: Integrated into a real robotic control pipeline as an **external critic**, enabling **online error detection and correction** for VLA-based systems.
 
-## Contents
+## 📃 Contents
 
 - [Dataset](#dataset)
 - [Model](#models)
