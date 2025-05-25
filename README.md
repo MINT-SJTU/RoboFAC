@@ -1,8 +1,8 @@
 # RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)]() 
-[![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://arxiv.org/abs/2505.12224)
-[![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
+[![Paper](https://img.shields.io/badge/Paper-PDF-red)]()
+[![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)]()
 [![Model](https://img.shields.io/badge/Model-Huggingface-yellow)]()
 
 This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction".
@@ -62,10 +62,20 @@ python setup_config.py
 ```
 
 ## Models  
-Detailed implementations and pre-trained weights will be released in upcoming updates. Stay tuned!  
+Our RoboFAC-7B model is released! See 
 
-## Benchmark  
-Comprehensive benchmark results and comparative experiments are being organized, and will be added soon.  
+## Dataset
+Our RoboFAC dataset is released! See
+
+## Evaluation
+To evaluate your model's capacity of task understanding, failure analysis and failure correction, simply run the `evaluation/eval.py`.
+
+To speed up the evaluation process, we use the vLLM engine for model inference. Specifically, you need to first run the following command to launch the model:
+```bash
+python -m vllm.entrypoints.openai.api_server --model YOUR_MODEL_PATH
+```
+The final results will be in `results_merged.json`, it contains the model's performance scores on each dimension for each robotic task.
+
 
 ## Real-world Control  
 Real-world control interfaces and deployment solutions are currently under development. Documentation and sample code will be released shortly.  
