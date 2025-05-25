@@ -8,6 +8,7 @@
 This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction".
 
 ## Introduction
+![Overview](./assets/overview.jpg)
 
 RoboFAC is a comprehensive framework for robotic failure analysis and correction. 
 
@@ -18,13 +19,32 @@ RoboFAC is a comprehensive framework for robotic failure analysis and correction
 
 ## Contents
 
-- [Data Generation](#data-generation)
-- [Models](#models)
+- [Dataset](#dataset)
+- [Model](#models)
 - [Benchmark](#benchmark)
-- [Real-world Control](#real-world-control)
+- [Data Generation (Optional)](#data-generation)
 
-## Data Generation
+## Dataset
+![Dataset](./assets/dataset.jpg)
+RoboFAC Dataset is a large-scale, high-diversity dataset featuring videos of robot manipulation failures, annotated with QA pairs for comprehensive failure reasoning.
+👉 Download from HuggingFace: [The RoboFAC Datset](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
 
+## Model  
+![Model result](./assets/result.jpg)
+We release RoboFAC-7B, a large vision-language model finetuned for robotic failure analysis and correction.
+👉 Get the model from HuggingFace: [The RoboFAC-7B](https://huggingface.co/MINT-SJTU/RoboFAC-7B)
+
+## Evaluation
+To evaluate your model's capacity of task understanding, failure analysis and failure correction, simply run the `evaluation/eval.py`.
+
+To speed up the evaluation process, we use the vLLM engine for model inference. Specifically, you need to first run the following command to launch the model:
+```bash
+python -m vllm.entrypoints.openai.api_server --model YOUR_MODEL_PATH
+```
+The final results will be in `results_merged.json`, it contains the model's performance scores on each dimension for each robotic task.
+
+## Data Generation (Optional)
+We recommend using the provided RoboFAC dataset directly. However, if you want to replicate or extend the data collection process, follow these steps:
 ### 1. Environment Setup
 
 #### 1.1. Create a Virtual Environment
@@ -61,24 +81,13 @@ cd RoboFAC
 python setup_config.py
 ```
 
-## Models  
-Our RoboFAC-7B model is released! See 
-
-## Dataset
-Our RoboFAC dataset is released! See
-
-## Evaluation
-To evaluate your model's capacity of task understanding, failure analysis and failure correction, simply run the `evaluation/eval.py`.
-
-To speed up the evaluation process, we use the vLLM engine for model inference. Specifically, you need to first run the following command to launch the model:
-```bash
-python -m vllm.entrypoints.openai.api_server --model YOUR_MODEL_PATH
+### 2. Collect Successful Trajactories
+(Optional) To collect successful demonstration trajectories for reference:
 ```
-The final results will be in `results_merged.json`, it contains the model's performance scores on each dimension for each robotic task.
-
-
-## Real-world Control  
-Real-world control interfaces and deployment solutions are currently under development. Documentation and sample code will be released shortly.  
+cd RoboFAC/data_collection
+python collect_success.py
+```
+⚠️ Note: These scripts are provided for reproducibility only and are not required for using the dataset or models.
 
 ## Acknowledgement
 
