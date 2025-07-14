@@ -32,7 +32,7 @@ This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Frame
 ![Dataset](./assets/dataset.jpg)
 RoboFAC Dataset is a large-scale, high-diversity dataset featuring videos of robot manipulation failures, annotated with QA pairs for comprehensive failure reasoning.
 
-👉 Download from HuggingFace: [The RoboFAC Datset](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
+👉 Download from HuggingFace: [The RoboFAC Dataset](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
 
 ## 🧠 Model  
 ![Model result](./assets/result.jpg)
