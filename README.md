@@ -3,6 +3,7 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://mint-sjtu.github.io/RoboFAC.io/)
 [![Github](https://img.shields.io/badge/Project-Github-light)](https://github.com/MINT-SJTU/RoboFAC)
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://arxiv.org/abs/2505.12224)
+[![Dataset](https://img.shields.io/badge/just%20the%20message-8A2BE2)](https://www.modelscope.cn/datasets/MinghaoYE/RoboFAC-dataset)
 [![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
 [![Model](https://img.shields.io/badge/Model-Huggingface-yellow)](https://huggingface.co/MINT-SJTU/RoboFAC-7B)
 
