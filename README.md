@@ -4,6 +4,7 @@
 [![Github](https://img.shields.io/badge/Project-Github-light)](https://github.com/MINT-SJTU/RoboFAC)
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://arxiv.org/abs/2505.12224)
 [![Dataset](https://img.shields.io/badge/Dataset-Huggingface-green)](https://huggingface.co/datasets/MINT-SJTU/RoboFAC-dataset)
+[![Dataset](https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/modelscope-text.png)](https://modelscope.cn/datasets/MinghaoYE/RoboFAC-dataset)
 [![Model](https://img.shields.io/badge/Model-Huggingface-yellow)](https://huggingface.co/MINT-SJTU/RoboFAC-7B)
 
 This is the official repo for our RoboFAC paper: "RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction".
